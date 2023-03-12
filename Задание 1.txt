@@ -1,0 +1,3 @@
+С планом тестрования можно ознакомиться по ссылке https://docs.google.com/document/d/1lU29jNChvzj7QG6BgUNc-Ay46qw717DjGtxa6wf8RZ0/edit?usp=sharing
+С чек-листо и тест кейсами https://docs.google.com/spreadsheets/d/1qBG2tg_YdMwxHOLebbX7LOF5tqVzF73xpFpncdmrdMw/edit?usp=sharing
+С дефектами https://docs.google.com/document/d/1Tjb8Dv9J2fmZrFaaoMXL1HNVszZijizmP7gcHV9-4T8/edit?usp=sharing
