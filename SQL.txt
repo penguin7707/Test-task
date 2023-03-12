@@ -1,0 +1,22 @@
+a.	Написать запрос, который сделает выборку: Фамилии сотрудников, у которых нет детей.
+
+SELECT Last_Name FROM PERSONS
+WHERE Children_count IS 0;
+
+b.	Написать запрос, который сделает выборку: Фамилия сотрудника | Название филиала, в котором работает сотрудник.
+
+SELECT Last_Name, Department_Name
+FROM PERSONS INNER JOIN DEPARTMENTS ON PERSONS.department_id=DEPARTMENTS.department_id;
+
+c.	Написать запрос, который сделает выборку: Название филиала | Количество сотрудников в филиале
+
+SELECT Department_Name, count(Last_Name) AS Personals_count
+FROM DEPARTMENTS LEFT JOIN PERSONS ON PERSONS.department_id=DEPARTMENTS.department_id
+GROUP BY DEPARTMENT_Name;
+
+d.	Написать запрос, который сделает выборку: Название всех филиалов, где количество сотрудников > 20
+
+SELECT Department_Name
+FROM DEPARTMENTS LEFT JOIN PERSONS ON PERSONS.department_id=DEPARTMENTS.department_id
+GROUP BY Department_Name
+HAVING count(Last_Name) > 20;
